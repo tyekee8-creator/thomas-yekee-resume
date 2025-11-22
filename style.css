@@ -1,0 +1,152 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #007ACC;
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  font-size: 0.9rem;
+  color: #666;
+  margin-right: 10px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #007ACC;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007ACC;
+  padding-bottom: 5px;
+}
+
+.skills ul, .job-details ul {
+  list-style: disc inside;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.job-desc {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.footer a {
+  color: #007ACC;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.toggle-details {
+  background-color: #007ACC;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.toggle-details:hover {
+  background-color: #005f99;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 15px;
+  }
+
+  .header, .section {
+    text-align: center;
+  }
+
+  .contact-info span {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
